@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, .title-row{
+    background-image: url("image/office.jpg");
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+nav ul{
+    list-style: none; 
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: white; 
+}
+.cta-button button{
+    background-color: brown;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.title-row{
+    padding: 25px;
+    height: 350px;
+}
+.tittle h1{
+    margin-bottom: 10px;
+    font-size: 70px;
+    color: white;
+    animation: moveUp 5s linear;
+    animation-timing-function: ease-out;
+}
+.tittle h1::first-letter {
+    color: chartreuse;
+  }
+.tittle p{
+    margin-bottom: 10px;
+    color: white;
+    animation: moveUp 4s linear 0.25s;
+    animation-timing-function: ease-out;
+}
+.tittle p::first-line {
+    text-decoration: underline;
+    font-size: large;
+    font-weight: bold;
+}
+.tittle button{
+    padding: 5px;
+    background-color: brown;
+    animation: moveUp 2.5s linear 0.25s;
+    animation-timing-function: ease-out;
+}
+.body-row{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card{
+    padding: 30px;
+    background-color: brown;
+    color: white;
+}
+/* Animation code here */
+@keyframes moveUp{
+    from{
+        transform: translateY(-1000px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
